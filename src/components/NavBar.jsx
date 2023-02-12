@@ -1,5 +1,7 @@
 import CartWidget from "./CartWidget";
 import { Container, Flex, Spacer, Box, Heading } from "@chakra-ui/react";
+import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const NavBar = () => {
   return (
@@ -15,6 +17,24 @@ const NavBar = () => {
           </Box>
         </Flex>
       </Container>
+
+      <Menu>
+        {({ isOpen }) => (
+          <>
+            <MenuButton
+              isActive={isOpen}
+              as={Button}
+              rightIcon={<ChevronDownIcon />}
+            >
+              {isOpen ? "Ocultar" : "Categorias"}
+            </MenuButton>
+            <MenuList>
+              <MenuItem>Category 1</MenuItem>
+              <MenuItem>Category 2</MenuItem>
+            </MenuList>
+          </>
+        )}
+      </Menu>
     </>
   );
 };

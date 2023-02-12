@@ -6,7 +6,10 @@ function App() {
     <>
       <NavBar />
 
-      <ItemListContainer />
+      <ItemListContainer
+        greeting="Saludos desde mi APP"
+        saludos="Hola desde mi app"
+      />
     </>
   );
 }
