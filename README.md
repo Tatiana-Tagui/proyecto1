@@ -1,13 +1,13 @@
-# ENCABEZADO 1
+# CarGo Automotores
 
-## ENCABEZADO 2
+## Proyecto de React de CoderHouse comision 39545
 
-###### ENCABEZADO 6
+###### Porfesor: Omar Jesús Maniás
 
 ---
 
-**Negrita**
-_Italica_
+**El proyecto consiste en mostrar dos tipos de unidades:**
+_Unidades OKM y Unidades Usadas en excelente estado._
 
 Soy un parrafo
 
@@ -22,7 +22,7 @@ Soy un parrafo
 | ------- | -------- | ---------------------- |
 | Tatiana | Bustos   | tati1bustos1@gmail.com |
 
-[linkedin] ("https://www.linkedin.com/in/tatiana-bustos-7b13aa231/")
+[linkedin](https://www.linkedin.com/in/tatiana-bustos-7b13aa231/)
 
 > Este es un proyecto de CH
 
