@@ -1,14 +1,14 @@
-import { Container } from "@chakra-ui/react";
+import {Card} from "@chakra-ui/react";
 
 const ItemList = () => {
-    const bikes = [
-        id:3,
-        name:"Bike 3",
-        price: 500,
+    const car = [{
+        id:1,
+        nombre:"Car 1",
+        price: 1200200,
         description:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A velit, asperiores dolor voluptatibus facere veniam recusandae fugit praesentium quis et",
     
-    ]},;
+    }]},;
 
 
 return (
@@ -46,6 +46,7 @@ return (
     </ButtonGroup>
   </CardFooter>
 </Card>
+</>
 
 
-
+export default ItemList;
