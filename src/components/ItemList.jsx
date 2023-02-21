@@ -9,6 +9,7 @@ import {
   ButtonGroup,
   Button,
   Image,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import imgUrl from "../assets/car.jpg";
 const ItemList = () => {
@@ -59,7 +60,7 @@ const ItemList = () => {
 
   return (
     <>
-      <Card id="car1" maxW="sm">
+      <Card id="car" maxW="sm">
         <CardBody>
           <Image
             src={imgUrl}
@@ -86,7 +87,7 @@ const ItemList = () => {
           </ButtonGroup>
         </CardFooter>
       </Card>
-      <Card id="car2" maxW="sm">
+      <Card id="car" maxW="sm">
         <CardBody>
           <Image
             src={imgUrl}
@@ -113,7 +114,7 @@ const ItemList = () => {
           </ButtonGroup>
         </CardFooter>
       </Card>
-      <Card id="car3" maxW="sm">
+      <Card id="car" maxW="sm">
         <CardBody>
           <Image
             src={imgUrl}
@@ -140,7 +141,7 @@ const ItemList = () => {
           </ButtonGroup>
         </CardFooter>
       </Card>
-      <Card id="car4" maxW="sm">
+      <Card id="car" maxW="sm">
         <CardBody>
           <Image
             src={imgUrl}
@@ -167,7 +168,7 @@ const ItemList = () => {
           </ButtonGroup>
         </CardFooter>
       </Card>
-      <Card id="car5" maxW="sm">
+      <Card id="car" maxW="sm">
         <CardBody>
           <Image
             src={imgUrl}
@@ -194,7 +195,7 @@ const ItemList = () => {
           </ButtonGroup>
         </CardFooter>
       </Card>
-      <Card id="car6" maxW="sm">
+      <Card id="car" maxW="sm">
         <CardBody>
           <Image
             src={imgUrl}

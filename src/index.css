@@ -68,10 +68,18 @@ button:focus-visible {
   }
 }
 
+#car {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
 /*ESTE ES MI FOOTER ---------------------------------------------------------------------------------------------------*/
 .footer {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: footer;
   border: solid 1px;
   display: -webkit-box;
@@ -89,7 +97,6 @@ button:focus-visible {
 
 .footer-footer_Iconos-menu {
   list-style: none;
-  /*elimina los puntos de una lista*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
