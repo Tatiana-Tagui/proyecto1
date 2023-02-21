@@ -67,3 +67,60 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/*ESTE ES MI FOOTER ---------------------------------------------------------------------------------------------------*/
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  border: solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-footer_Iconos-menu {
+  list-style: none;
+  /*elimina los puntos de una lista*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.facebook {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.instagram {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.email {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.whatsapp {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.footerTxt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
