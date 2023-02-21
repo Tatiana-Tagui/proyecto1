@@ -1,10 +1,12 @@
-import React from "react";
-
+import ItemList from "./ItemList";
+import { Center } from "@chakra-ui/react";
 const ItemListContainer = ({ greeting, saludos }) => {
   return (
     <div>
-      <h1>{greeting}</h1>
-      <h2>{saludos}</h2>
+      <Center bg="#D6EAF8" h="100px" color="clack">
+        Car Catalogue
+      </Center>
+      <itemList />
     </div>
   );
 };

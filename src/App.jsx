@@ -3,14 +3,10 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <>
+    <div>
       <NavBar />
-
-      <ItemListContainer
-        greeting="Saludos desde mi APP"
-        saludos="Hola desde mi app"
-      />
-    </>
+      <ItemListContainer />
+    </div>
   );
 }
 
