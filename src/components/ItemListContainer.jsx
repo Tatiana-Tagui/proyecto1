@@ -6,7 +6,7 @@ const ItemListContainer = ({ greeting, saludos }) => {
       <Center bg="#D6EAF8" h="100px" color="clack">
         Car Catalogue
       </Center>
-      <itemList />
+      <ItemList />
     </div>
   );
 };

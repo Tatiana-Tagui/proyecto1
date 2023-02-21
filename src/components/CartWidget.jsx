@@ -4,10 +4,10 @@ import React from "react";
 const CartWidget = () => {
   return (
     <div className="cart">
-      <button size="lg" variant="outline" colorScheme="orange">
+      <Button size="lg" variant="outline">
         <span className="material-symbols-outlined">shopping_cart</span>
         <span>5</span>
-      </button>
+      </Button>
     </div>
   );
 };
