@@ -97,6 +97,7 @@ button:focus-visible {
 
 .footer-footer_Iconos-menu {
   list-style: none;
+  /*elimina los puntos de una lista*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
