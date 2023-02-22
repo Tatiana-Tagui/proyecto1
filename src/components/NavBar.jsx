@@ -20,7 +20,7 @@ const NavBar = () => {
       <Container maxW="100rem" bg="blue.100" color="#262626">
         <Flex alignContent="center" gap="2">
           <Box p="2" color="white">
-            <Heading size="md">E-commerce</Heading>
+            <Heading size="md">Automotores Tagui</Heading>
           </Box>
           <Spacer />
           <Box p="2" color="white">
@@ -40,8 +40,8 @@ const NavBar = () => {
               {isOpen ? "Ocultar" : "Categorias"}
             </MenuButton>
             <MenuList>
-              <MenuItem>Category 1</MenuItem>
-              <MenuItem>Category 2</MenuItem>
+              <MenuItem>Usado</MenuItem>
+              <MenuItem>Okm</MenuItem>
             </MenuList>
           </>
         )}

@@ -13,70 +13,27 @@ import {
 } from "@chakra-ui/react";
 import imgUrl from "../assets/car.jpg";
 const ItemList = () => {
-  const car = [
-    {
-      id: 1,
-      nombre: "Car 1",
-      price: 1200200,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A velit, asperiores dolor voluptatibus facere veniam recusandae fugit praesentium quis et",
-    },
-    {
-      id: 2,
-      nombre: "Car 2",
-      price: 1200200,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A velit, asperiores dolor voluptatibus facere veniam recusandae fugit praesentium quis et",
-    },
-    {
-      id: 3,
-      nombre: "Car 3",
-      price: 1200200,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A velit, asperiores dolor voluptatibus facere veniam recusandae fugit praesentium quis et",
-    },
-    {
-      id: 4,
-      nombre: "Car 4",
-      price: 1200200,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A velit, asperiores dolor voluptatibus facere veniam recusandae fugit praesentium quis et",
-    },
-    {
-      id: 5,
-      nombre: "Car 5",
-      price: 1200200,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A velit, asperiores dolor voluptatibus facere veniam recusandae fugit praesentium quis et",
-    },
-    {
-      id: 6,
-      nombre: "Car 6",
-      price: 1200200,
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A velit, asperiores dolor voluptatibus facere veniam recusandae fugit praesentium quis et",
-    },
-  ];
+  const car = [];
 
   return (
     <>
-      <Grid templateColumns="repeat(5, 1fr)" gap={6}>
+      <Grid templateColumns="repeat(4, 1fr)" gap={6}>
         <Card id="car" maxW="sm">
           <CardBody>
             <Image
               src={imgUrl}
-              alt="Green double couch with wooden legs"
+              alt="Green double couch with wooden leg"
               borderRadius="lg"
             />
-            <Stack mt="6" spacing="3">
-              <Heading size="md">Living room Sofa</Heading>
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">FORD</Heading>
               <Text>
                 This sofa is perfect for modern tropical spaces, baroque
                 inspired spaces, earthy toned spaces and for people who love a
                 chic design with a sprinkle of vintage design.
               </Text>
-              <Text color="blue.600" fontSize="2xl">
-                $450
+              <Text color="blue.600" fontSize="4xl">
+                $4.500.000
               </Text>
             </Stack>
           </CardBody>
@@ -96,15 +53,15 @@ const ItemList = () => {
               alt="Green double couch with wooden legs"
               borderRadius="lg"
             />
-            <Stack mt="6" spacing="3">
-              <Heading size="md">Living room Sofa</Heading>
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">PEUGEOT</Heading>
               <Text>
                 This sofa is perfect for modern tropical spaces, baroque
                 inspired spaces, earthy toned spaces and for people who love a
                 chic design with a sprinkle of vintage design.
               </Text>
-              <Text color="blue.600" fontSize="2xl">
-                $450
+              <Text color="blue.600" fontSize="4xl">
+                $5.000.000
               </Text>
             </Stack>
           </CardBody>
@@ -124,15 +81,204 @@ const ItemList = () => {
               alt="Green double couch with wooden legs"
               borderRadius="lg"
             />
-            <Stack mt="6" spacing="3">
-              <Heading size="md">Living room Sofa</Heading>
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">TOYOTA</Heading>
               <Text>
                 This sofa is perfect for modern tropical spaces, baroque
                 inspired spaces, earthy toned spaces and for people who love a
                 chic design with a sprinkle of vintage design.
               </Text>
-              <Text color="blue.600" fontSize="2xl">
-                $450
+              <Text color="blue.600" fontSize="4xl">
+                $7.500.000
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <ButtonGroup spacing="2">
+              <Button variant="solid">Buy now</Button>
+              <Button variant="ghost">Add to cart</Button>
+            </ButtonGroup>
+          </CardFooter>
+        </Card>
+        <Card id="car" maxW="sm">
+          <CardBody>
+            <Image
+              src={imgUrl}
+              alt="Green double couch with wooden legs"
+              borderRadius="lg"
+            />
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">FORD</Heading>
+              <Text>
+                This sofa is perfect for modern tropical spaces, baroque
+                inspired spaces, earthy toned spaces and for people who love a
+                chic design with a sprinkle of vintage design.
+              </Text>
+              <Text color="blue.600" fontSize="4xl">
+                $6.700.000
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <ButtonGroup spacing="2">
+              <Button variant="solid">Buy now</Button>
+              <Button variant="ghost">Add to cart</Button>
+            </ButtonGroup>
+          </CardFooter>
+        </Card>
+        <Card id="car" maxW="sm">
+          <CardBody>
+            <Image
+              src={imgUrl}
+              alt="Green double couch with wooden legs"
+              borderRadius="lg"
+            />
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">HONDA</Heading>
+              <Text>
+                This sofa is perfect for modern tropical spaces, baroque
+                inspired spaces, earthy toned spaces and for people who love a
+                chic design with a sprinkle of vintage design.
+              </Text>
+              <Text color="blue.600" fontSize="4xl">
+                $8.200.000
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <ButtonGroup spacing="2">
+              <Button variant="solid">Buy now</Button>
+              <Button variant="ghost">Add to cart</Button>
+            </ButtonGroup>
+          </CardFooter>
+        </Card>
+        <Card id="car" maxW="sm">
+          <CardBody>
+            <Image
+              src={imgUrl}
+              alt="Green double couch with wooden legs"
+              borderRadius="lg"
+            />
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">CHEVROLET</Heading>
+              <Text>
+                This sofa is perfect for modern tropical spaces, baroque
+                inspired spaces, earthy toned spaces and for people who love a
+                chic design with a sprinkle of vintage design.
+              </Text>
+              <Text color="blue.600" fontSize="4xl">
+                $3.500.000
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <ButtonGroup spacing="2">
+              <Button variant="solid">Buy now</Button>
+              <Button variant="ghost">Add to cart</Button>
+            </ButtonGroup>
+          </CardFooter>
+        </Card>
+        <Card id="car" maxW="sm">
+          <CardBody>
+            <Image
+              src={imgUrl}
+              alt="Green double couch with wooden legs"
+              borderRadius="lg"
+            />
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">TOYOTA</Heading>
+              <Text>
+                This sofa is perfect for modern tropical spaces, baroque
+                inspired spaces, earthy toned spaces and for people who love a
+                chic design with a sprinkle of vintage design.
+              </Text>
+              <Text color="blue.600" fontSize="4xl">
+                $9.900.000
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <ButtonGroup spacing="2">
+              <Button variant="solid">Buy now</Button>
+              <Button variant="ghost">Add to cart</Button>
+            </ButtonGroup>
+          </CardFooter>
+        </Card>
+        <Card id="car" maxW="sm">
+          <CardBody>
+            <Image
+              src={imgUrl}
+              alt="Green double couch with wooden legs"
+              borderRadius="lg"
+            />
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">VOLKSWAGEN</Heading>
+              <Text>
+                This sofa is perfect for modern tropical spaces, baroque
+                inspired spaces, earthy toned spaces and for people who love a
+                chic design with a sprinkle of vintage design.
+              </Text>
+              <Text color="blue.600" fontSize="4xl">
+                $3.700.000
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <ButtonGroup spacing="2">
+              <Button variant="solid">Buy now</Button>
+              <Button variant="ghost">Add to cart</Button>
+            </ButtonGroup>
+          </CardFooter>
+        </Card>
+        <Card id="car" maxW="sm">
+          <CardBody>
+            <Image
+              src={imgUrl}
+              alt="Green double couch with wooden legs"
+              borderRadius="lg"
+            />
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">FORD</Heading>
+              <Text>
+                This sofa is perfect for modern tropical spaces, baroque
+                inspired spaces, earthy toned spaces and for people who love a
+                chic design with a sprinkle of vintage design.
+              </Text>
+              <Text color="blue.600" fontSize="4xl">
+                $6.500.500
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            <ButtonGroup spacing="2">
+              <Button variant="solid">Buy now</Button>
+              <Button variant="ghost">Add to cart</Button>
+            </ButtonGroup>
+          </CardFooter>
+        </Card>
+        <Card id="car" maxW="sm">
+          <CardBody>
+            <Image
+              src={imgUrl}
+              alt="Green double couch with wooden legs"
+              borderRadius="lg"
+            />
+            <Stack mt="20" spacing="15">
+              <Heading size="lg">VOLKSWAGEN</Heading>
+              <Text>
+                This sofa is perfect for modern tropical spaces, baroque
+                inspired spaces, earthy toned spaces and for people who love a
+                chic design with a sprinkle of vintage design.
+              </Text>
+              <Text color="blue.600" fontSize="4xl">
+                $4.300.000
               </Text>
             </Stack>
           </CardBody>

@@ -1,9 +1,9 @@
 import ItemList from "./ItemList";
 import { Center } from "@chakra-ui/react";
-const ItemListContainer = ({ greeting, saludos }) => {
+const ItemListContainer = () => {
   return (
     <div>
-      <Center bg="#D6EAF8" h="100px" color="clack">
+      <Center bg="#D6EAF8" fontSize="4xl" color="clack">
         Car Catalogue
       </Center>
       <ItemList />
