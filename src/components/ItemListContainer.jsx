@@ -1,12 +1,29 @@
+import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
-import { Center } from "@chakra-ui/react";
+import { useParams } from "react-router-dom";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
+
 const ItemListContainer = () => {
+  const [bikes, setBikes] = useState([]);
+  const { category } = useParams();
+
+  useEffect(() => {
+    const db = getFirestore();
+    const bikesCollection = collection(db, "bicicletas");
+    getDocs(bikesCollection).then((querySnapshot) => {
+      const bikes = querySnapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }));
+      setBikes(bikes);
+    });
+  }, []);
+
+  const catFilter = bikes.filter((bike) => bike.category === category);
+
   return (
     <div>
-      <Center bg="#D6EAF8" fontSize="4xl" color="clack">
-        Car Catalogue
-      </Center>
-      <ItemList />
+      {category ? <ItemList bikes={catFilter} /> : <ItemList bikes={bikes} />}
     </div>
   );
 };
