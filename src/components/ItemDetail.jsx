@@ -1,79 +1,39 @@
-import {
-  Center,
-  Card,
-  CardBody,
-  Image,
-  Stack,
-  Heading,
-  Text,
-  CardFooter,
-  Divider,
-} from "@chakra-ui/react";
-import { useParams } from "react-router-dom";
-import ItemCount from "./ItemCount";
-
-import { useEffect, useState } from "react";
-import { doc, getDoc, getFirestore } from "firebase/firestore";
-
-const ItemDetail = ({ bikes }) => {
-  const { id } = useParams();
-
-  const [producto, setProducto] = useState([]);
-
-  useEffect(() => {
-    const db = getFirestore();
-
-    const biciRef = doc(db, "bicicletas", `${id}`);
-
-    getDoc(biciRef).then((snapshot) => {
-      if (snapshot.exists()) {
-        setProducto(snapshot.data());
-      } else {
-        console.log("No such document!");
-      }
-    });
-  }, []);
-
-  const bikeFilter = bikes.filter((bike) => bike.id == id);
+import ItemCount from "../ItemCount/ItemCount";
+import { Link } from "react-router-dom";
+import { useDarkModeContext } from "../../context/DarkModeContext";
+import { useCarritoContext } from "../../context/CartContext";
+const ItemDetail = ({ producto }) => {
+  const { darkMode } = useDarkModeContext();
+  const { addItem } = useCarritoContext();
+  const onAdd = (contador) => {
+    addItem(producto, contador);
+  };
 
   return (
-    <>
-      {bikeFilter.map((bike) => (
-        <div key={bike.id}>
-          <Center p="1rem">
-            <Card className="card-main">
-              <CardBody>
-                <Image borderRadius="lg" src={bike.image} />
-                <Stack mt="6" spacing="3">
-                  <Heading size="md">{bike.name}</Heading>
-                  <Text color="blue.800" fontSize="l">
-                    Description: {bike.description}
-                  </Text>
-                  <Text color="blue.800" fontSize="l">
-                    Category: {bike.category}
-                  </Text>
-                  <Text color="red.600" fontSize="xl">
-                    Stock: {bike.stock}
-                  </Text>
-                  <Text color="green.600" fontSize="xl">
-                    Price: U$D {bike.price}
-                  </Text>
-                </Stack>
-              </CardBody>
-              <Divider />
-              <CardFooter className="card-footer">
-                <ItemCount
-                  stock={bike.stock}
-                  id={bike.id}
-                  price={bike.price}
-                  name={bike.name}
-                />
-              </CardFooter>
-            </Card>
-          </Center>
-        </div>
-      ))}
-    </>
+    <div
+      className={`row g-0 ${
+        darkMode ? "cardProductoDetailDark" : "cardProducto"
+      }`}
+    >
+      <div className="col-md-4">
+        <img className="imagenCard" src={producto.img} alt="" />
+      </div>
+      <div className="col-mb-8">
+        <h5 className="card-title">{producto.nombreAMostrar}</h5>
+        <p className="card-text">Producto: {producto.producto} </p>
+        <p className="card-text">Marca: {producto.marca} </p>
+        <p className="card-text">
+          Precio: {new Intl.NumberFormat("de-DE").format(producto.precio)}{" "}
+        </p>
+        <p className="card-text">Stock: {producto.stock}</p>
+        <ItemCount stock={`${producto.stock}`} onAdd={onAdd} />
+        <button className="btn btn-secundary">
+          <Link to="/cart" className="nav-link">
+            Ir al Carrito
+          </Link>
+        </button>
+      </div>
+    </div>
   );
 };
 

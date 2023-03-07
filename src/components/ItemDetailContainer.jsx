@@ -1,22 +1,21 @@
-import ItemDetail from "./ItemDetail";
-import { useState, useEffect } from "react";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
-
+import { useState } from "react";
+import { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { getProducto } from "../../assets/firebase";
+import ItemDetail from "../ItemDetail/ItemDetail";
 const ItemDetailContainer = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    const db = getFirestore();
-    const bikesCollection = collection(db, "bicicletas");
-    getDocs(bikesCollection).then((querySnapshot) => {
-      const bikes = querySnapshot.docs.map((doc) => ({
-        ...doc.data(),
-        id: doc.id,
-      }));
-      setData(bikes);
-    });
-  }, []);
+  const [producto, setProducto] = useState([]);
+  const { id } = useParams();
 
-  return <ItemDetail bikes={data} />;
+  useEffect(() => {
+    getProducto(id).then((prod) => setProducto(prod));
+  }, []); //MODELO NO ESTOY SEGURO SI VA ENTRE CORCHETES
+
+  return (
+    <div className="card cardProductoDetail itemDetail">
+      <ItemDetail producto={producto} />
+    </div>
+  );
 };
 
 export default ItemDetailContainer;

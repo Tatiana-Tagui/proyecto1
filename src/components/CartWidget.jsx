@@ -1,14 +1,18 @@
-import { Button } from "@chakra-ui/react";
-import React from "react";
-
+import { Link } from "react-router-dom";
+import { useCarritoContext } from "../../context/CartContext";
 const CartWidget = () => {
+  const { getItemQuantity } = useCarritoContext();
+
   return (
-    <div className="cart">
-      <Button size="lg" variant="outline">
-        <span className="material-symbols-outlined">shopping_cart</span>
-        <span>5</span>
-      </Button>
-    </div>
+    <button className="btn btn-dark">
+      <Link className="nav-link" to={"/cart"}>
+        <i className="fas fa-shopping-cart fa-lg"></i>
+        {getItemQuantity() > 0 && (
+          <span className="contadorCarrito">{getItemQuantity()}</span>
+        )}
+        <span className="contadorCarrito"></span>
+      </Link>
+    </button>
   );
 };
 
