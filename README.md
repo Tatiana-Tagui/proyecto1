@@ -1,4 +1,4 @@
-# 👋 Proyecto Final React ⚛️
+# Proyecto Final React ⚛️
 
 ## Proyecto final del curso de React dictado por CoderHouse, se trata de un ecommerce funcional-Comisión 39545
 
