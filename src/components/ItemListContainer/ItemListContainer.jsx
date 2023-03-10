@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ItemList from "../ItemList/ItemList";
-import "./ItemListContainer.css";
+import ItemList from "../ItemList";
+import "../ItemListContainer/ItemListContainer.css";
 import { getProductos, cargarBDD } from "../../assets/firebase";
 const ItemListContainer = () => {
   //cargarBDD();

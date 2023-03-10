@@ -1,6 +1,8 @@
-# CarGo Automotores
+# 👋 Proyecto Final React ⚛️
 
-## Proyecto de React de CoderHouse comision 39545
+## Proyecto final del curso de React dictado por CoderHouse, se trata de un ecommerce funcional-Comisión 39545
+
+#### Pre Requirements 📋
 
 ###### Porfesor: Omar Jesús Maniás
 
@@ -9,11 +11,12 @@
 **El proyecto consiste en mostrar dos tipos de unidades:**
 _Unidades OKM y Unidades Usadas en excelente estado._
 
-Soy un parrafo
+Built with 👷
 
-1. Elemento 1
-1. Elemento 2
-1. Elemento 3
+1. [React] (https://es.reactjs.org/) - JavaScript Framework 1
+2. [React-Toastify] (https://www.npmjs.com/package/react-toastify) - React Toastify 2
+3. [Firebase] (https://firebase.google.com/?hl=es) - NoSQL Database 3
+4. [Bootstrap] (https://getbootstrap.com/) - Bootstrap 4
 
 - elem 1
 - elem 2

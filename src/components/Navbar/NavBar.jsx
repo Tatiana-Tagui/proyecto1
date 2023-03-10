@@ -1,8 +1,8 @@
-import "./Navbar.css";
-import CartWidget from "../CartWidget/CartWidget";
-import Categorias from "../Categorias/Categorias.jsx";
+import "../Navbar/";
+import CartWidget from "../CartWidget";
+import Categorias from "../Categorias";
 import { Link } from "react-router-dom";
-import BotonDarkMode from "./BotonDarkMode/BotonDarkMode";
+import BotonDarkMode from "../Navbar/BotonDarkMode/BotonDarkMode.jsx";
 import { useDarkModeContext } from "../../context/DarkModeContext";
 const Navbar = () => {
   const { darkMode } = useDarkModeContext();

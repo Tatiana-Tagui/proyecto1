@@ -3,11 +3,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //COMPONENTES
-import Navbar from "./Navbar/Navbar.jsx";
-import ItemListContainer from "./ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
-import Cart from "./Cart/Cart";
-import Checkout from "./Checkout/Checkout";
+import Navbar from "../components/Navbar/NavBar.jsx";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "../components/ItemDetailContainer";
+import Cart from "../components/Cart";
+import Checkout from "../components/Checkout";
 import { DarkModeProvider } from "../context/DarkModeContext";
 import { ToastContainer } from "react-toastify";
 
