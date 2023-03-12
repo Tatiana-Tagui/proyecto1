@@ -1,7 +1,7 @@
-import ItemCount from "../ItemCount/ItemCount";
+import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
-import { useDarkModeContext } from "../../context/DarkModeContext";
-import { useCarritoContext } from "../../context/CartContext";
+import { useDarkModeContext } from "../context/DarkModeContext";
+import { useCarritoContext } from "../context/CartContext";
 const ItemDetail = ({ producto }) => {
   const { darkMode } = useDarkModeContext();
   const { addItem } = useCarritoContext();

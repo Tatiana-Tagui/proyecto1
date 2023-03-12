@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //COMPONENTES
 import Navbar from "../components/Navbar/NavBar.jsx";
-import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import ItemListContainer from "../ItemListContainer/ItemListContainer.css";
 import ItemDetailContainer from "../components/ItemDetailContainer";
 import Cart from "../components/Cart";
 import Checkout from "../components/Checkout";

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { useCarritoContext } from "../../context/CartContext";
-import { useDarkModeContext } from "../../context/DarkModeContext";
+import { useCarritoContext } from "../context/CartContext";
+import { useDarkModeContext } from "../context/DarkModeContext";
 const Cart = () => {
   const { darkMode } = useDarkModeContext();
   const { carrito, emptyCart, totalPrice, removeItem } = useCarritoContext();

@@ -8,7 +8,7 @@ import {
   deleteDoc,
   collection,
   doc,
-} from "firebase/firestore";
+} from "../assets/firebase.js";
 
 const firebaseConfig = {};
 

@@ -1,4 +1,4 @@
-import "../Navbar/";
+import "../Navbar";
 import CartWidget from "../CartWidget";
 import Categorias from "../Categorias";
 import { Link } from "react-router-dom";

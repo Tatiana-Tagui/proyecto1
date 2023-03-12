@@ -5,8 +5,8 @@ import {
   getOrdenCompra,
   getProducto,
   updateProducto,
-} from "../../assets/firebase";
-import { useCarritoContext } from "../../context/CartContext";
+} from "../assets/firebase";
+import { useCarritoContext } from "../context/CartContext";
 import { toast } from "react-toastify";
 import { useState, useEffect } from "react";
 
